@@ -51,33 +51,32 @@
   }
 </script>
 <style lang="less" rel="stylesheet/less">
+  @import "../assets/style/weui-tabbar.less";
   .wechat {
-    background: url('/static/wx_base.png') -15px -8px no-repeat scroll transparent
+    background: url(@menuPic) -15px -8px no-repeat scroll transparent
   }
   .wechat_light {
-    background: url('/static/wx_base.png') -11px -54px no-repeat scroll transparent
+    background: url(@menuPic) -11px -54px no-repeat scroll transparent
   }
 
   .friends {
-    background: url('/static/wx_base.png') -58px -8px no-repeat scroll transparent
+    background: url(@menuPic) -58px -8px no-repeat scroll transparent
   }
   .friends_light {
-    background: url('/static/wx_base.png') -55px -53px no-repeat scroll transparent
+    background: url(@menuPic) -55px -53px no-repeat scroll transparent
   }
 
   .find {
-    background: url('/static/wx_base.png') -110px -8px no-repeat scroll transparent
+    background: url(@menuPic) -110px -8px no-repeat scroll transparent
   }
   .find_light {
-    background: url('/static/wx_base.png') -107px -51px no-repeat scroll transparent
+    background: url(@menuPic) -107px -51px no-repeat scroll transparent
   }
 
   .me {
-    background: url('/static/wx_base.png') -152px -8px no-repeat scroll transparent
+    background: url(@menuPic) -152px -8px no-repeat scroll transparent
   }
   .me_light {
-    background: url('/static/wx_base.png') -148px -51px no-repeat scroll transparent
+    background: url(@menuPic) -148px -51px no-repeat scroll transparent
   }
-
-  @import "../assets/style/weui-tabbar.less";
 </style>

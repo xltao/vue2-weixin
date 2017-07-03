@@ -18,13 +18,13 @@ export default [{
   children: [
     {
       path: '',
-      name: 'index',
-      redirect: '/index'
+      name: 'wechat',
+      redirect: '/wechat'
     },
     {
-      path: '/index',
-      name: 'index',
-      component: index
+      path: '/wechat',
+      name: 'wechat',
+      component: wechat
     },
     {
       path: '/content',
