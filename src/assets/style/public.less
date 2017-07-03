@@ -1,0 +1,108 @@
+@lightTextColor: rgb(70, 191, 24);
+@textColor: rgb(151, 151, 151);
+
+// color
+@weuiColorPrimary: #1AAD19;
+@weuiColorWarn: #E64340;
+
+// link
+@weuiLinkColorDefault: #586C94;
+
+// background
+@weuiBgColorDefault: #EFEFF4;
+@weuiBgColorActive: #ECECEC;
+
+// line
+@weuiLineColorLight: #E5E5E5;
+@weuiLineColorDark: #BCBAB6;
+
+// text
+@weuiTextColorTitle: #000000;
+@weuiTextColorTips: #B2B2B2;
+@weuiTextColorWarn: @weuiColorWarn;
+@weuiTextColorGray: #999999;
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+style, title, iframe {
+  display: none !important;
+}
+
+body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4, h5, h6, i, b, textarea, button, input, select, figure, figcaption {
+  list-style: none;
+  font-style: normal;
+  text-decoration: none;
+  border: none;
+  color: #666;
+  box-sizing: border-box;
+  font-weight: lighter;
+  font-family: Arial, 'Hiragino Sans GB', Microsoft Yahei, Helvetica Neue, Helvetica, sans-serif !important;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+body:focus, div:focus, span:focus, header:focus, footer:focus, nav:focus, section:focus, aside:focus, article:focus, ul:focus, dl:focus, dt:focus, dd:focus, li:focus, a:focus, p:focus, h1:focus, h2:focus, h3:focus, h4:focus, h5:focus, h6:focus, i:focus, b:focus, textarea:focus, button:focus, input:focus, select:focus, figure:focus, figcaption:focus {
+  outline: none;
+}
+
+.setTopLine(@c: #C7C7C7) {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1px solid @c;
+  color: @c;
+  transform-origin: 0 0;
+  transform: scaleY(0.5);
+}
+
+.setBottomLine(@c: #C7C7C7) {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1px solid @c;
+  color: @c;
+  transform-origin: 0 100%;
+  transform: scaleY(0.5);
+}
+
+.setLeftLine(@c: #C7C7C7) {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  bottom: 0;
+  border-left: 1px solid @c;
+  color: @c;
+  transform-origin: 0 0;
+  transform: scaleX(0.5);
+}
+
+.setRightLine(@c: #C7C7C7) {
+  content: " ";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+  bottom: 0;
+  border-right: 1px solid @c;
+  color: @c;
+  transform-origin: 100% 0;
+  transform: scaleX(0.5);
+}
+
+.setTapColor(@c:rgba(0,0,0,0)) {
+  -webkit-tap-highlight-color: @c;
+}
