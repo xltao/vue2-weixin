@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="chatLst">
     <section class="col-10 header"></section>
     <template v-for="chat in chatLst">
       <div class="row">
@@ -75,8 +75,10 @@
 <style lang="less" rel="stylesheet/less">
   @import "../assets/style/public.less";
   .col_header {
-    height:100%;
+    height: 100%;
     width: 100%;
+    max-width: 40px;
+    max-height: 40px;
   }
 
   .chat_info {

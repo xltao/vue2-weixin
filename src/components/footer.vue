@@ -45,7 +45,7 @@
     methods: {
       choseMenu(menu) {
         this.curMenu = menu;
-        this.$router.push(menu);
+        this.$router.push('/home/' + menu);
       }
     }
   }
