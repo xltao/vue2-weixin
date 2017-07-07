@@ -25,14 +25,13 @@
 @menuPic: '/static/wx_base.png';
 
 * {
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
-  display: inline-block;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-style, title, iframe, head {
-  display: none !important;
+div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4, h5, h6, i, b, textarea, button, input, select, figure, figcaption {
+  display: inline-block;
+  width: 100%;
 }
 
 body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4, h5, h6, i, b, textarea, button, input, select, figure, figcaption {
@@ -116,11 +115,21 @@ body:focus, div:focus, span:focus, header:focus, footer:focus, nav:focus, sectio
   float: right;
 }
 
-.row {
+img {
+  height: 100%;
   width: 100%;
+}
+
+.row {
+  .setColWidth(10);
   height: 60px;
   padding: 10px;
   border-top: #D9D9D9 1px solid;
+}
+
+// 没有上边框
+.row[borderTopWidth = '0'] {
+  border-top: 0;
 }
 
 .row:last-child {
@@ -132,13 +141,13 @@ body:focus, div:focus, span:focus, header:focus, footer:focus, nav:focus, sectio
   border-top: 0 !important;
 }
 
-.row:nth-child(2) {
-  border-top: 0 !important;
-}
-
 .col {
   .setFloat(left);
   height: 40px;
+}
+
+.col-middle {
+  line-height: 40px;
 }
 
 .setColWidth(@width) {
@@ -157,6 +166,10 @@ body:focus, div:focus, span:focus, header:focus, footer:focus, nav:focus, sectio
   .setColWidth(6);
 }
 
+.col-8 {
+  .setColWidth(8);
+}
+
 .col-10 {
   .setColWidth(10);
 }
@@ -167,4 +180,14 @@ body:focus, div:focus, span:focus, header:focus, footer:focus, nav:focus, sectio
 
 .textCenter {
   text-align: center;
+}
+
+.container {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.headerPic {
+  max-width: 40px;
+  max-height: 40px;
 }

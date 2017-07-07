@@ -9,3 +9,7 @@
 <script>
   export default {}
 </script>
+<style lang="less" rel="stylesheet/less">
+  // 全局引入公共css
+  @import "./assets/style/public.less";
+</style>

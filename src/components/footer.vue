@@ -29,7 +29,6 @@
             <div class="weui-tabbar__icon" :class="curMenu == 'me' ? 'me_light' : 'me'"></div>
             <p class="weui-tabbar__label">我</p>
           </a>
-
         </div>
       </div>
     </div>
@@ -47,6 +46,10 @@
         this.curMenu = menu;
         this.$router.push('/home/' + menu);
       }
+    },
+    mounted() {
+      console.log(this.$route.name);
+      this.curMenu = this.$route.name;
     }
   }
 </script>

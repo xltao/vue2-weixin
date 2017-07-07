@@ -1,10 +1,9 @@
 <template>
   <div class="chatLst">
-    <section class="col-10 header"></section>
     <template v-for="chat in chatLst">
       <div class="row">
         <div class="col col-2">
-          <img class="col_header" :src="chat.headerPic" />
+          <img class="headerPic" :src="chat.headerPic" />
         </div>
         <div class="col col-6 chat_info">
           <div class="info_name">{{chat.friendName}}</div>
@@ -73,7 +72,6 @@
   }
 </script>
 <style lang="less" rel="stylesheet/less">
-  @import "../assets/style/public.less";
   .col_header {
     height: 100%;
     width: 100%;
@@ -100,10 +98,5 @@
   .chat_time {
     font-size: 6px;
     color: #979797;
-  }
-
-  .header {
-    height: 50px;
-    background-color: #333333;
   }
 </style>

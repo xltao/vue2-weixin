@@ -2,17 +2,15 @@
  * Created by xltao on 2017/6/29.
  */
 import App from '../App'
-import index from '../page/index'
-import content from '../page/content'
+import index from '../components/page/index'
+import content from '../components/page/content'
 import footer from '../components/footer'
-import home from '../page/home'
+import home from '../components/page/home'
 
-import find from '../page/find'
-import friends from '../page/friends'
-import me from '../page/me'
-import wechat from '../page/wechat'
-import reg from '../page/reg'
-import login from '../page/login'
+import find from '../components/page/find'
+import friends from '../components/page/friends'
+import me from '../components/page/me'
+import wechat from '../components/page/wechat'
 
 export default [{
   path: '/',
@@ -26,7 +24,6 @@ export default [{
     },
     {
       path: '/home',
-      name: 'home',
       component: home,
       children: [
         {
@@ -60,16 +57,6 @@ export default [{
       path: '/footer',
       name: 'footer',
       component: footer
-    },
-    {
-      path: '/login',
-      name: 'login',
-      component: login
-    },
-    {
-      path: '/reg',
-      name: 'reg',
-      component: reg
     }
   ]
 }]
