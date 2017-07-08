@@ -1,6 +1,6 @@
 # vue2-weixin
 
-> weixin for vue (修改测试 add by zyzhang)
+> weixin for vue (修改测试)
 
 ## Build Setup
 
