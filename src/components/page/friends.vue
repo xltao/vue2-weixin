@@ -319,6 +319,7 @@
     background-color: #EBEBEB;
     height: 25px;
     line-height: 25px;
+    font-weight: 500;
   }
 
   .row:last-child {
@@ -332,12 +333,13 @@
     top: 3rem;
     width: 20px;
     font-size: 0.8rem;
+    font-weight: 800;
     height: 100%;
     .setTextAlign(center)
   }
 
   .letterItem {
-    margin-top: 5px;
+    margin-top: 2px;
   }
 
   .toast {
