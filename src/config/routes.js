@@ -11,8 +11,8 @@ import find from '../components/page/find'
 import friends from '../components/page/friends'
 import me from '../components/page/me'
 import wechat from '../components/page/wechat'
-import login from  '../page/login'
-import reg from '../page/reg'
+import login from  '../components/page/login'
+import reg from '../components/page/reg'
 
 export default [{
   path: '/',
