@@ -11,6 +11,8 @@ import find from '../components/page/find'
 import friends from '../components/page/friends'
 import me from '../components/page/me'
 import wechat from '../components/page/wechat'
+import login from  '../page/login'
+import reg from '../page/reg'
 
 export default [{
   path: '/',
@@ -57,6 +59,16 @@ export default [{
       path: '/footer',
       name: 'footer',
       component: footer
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: login
+    },
+    {
+      path: '/reg',
+      name: 'reg',
+      component: reg
     }
   ]
 }]
