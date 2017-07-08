@@ -24,6 +24,8 @@
 
 @menuPic: '/static/wx_base.png';
 
+@import "./func";
+
 * {
   margin: 0;
   padding: 0;
@@ -51,62 +53,6 @@ body:focus, div:focus, span:focus, header:focus, footer:focus, nav:focus, sectio
   outline: none;
 }
 
-.setTopLine(@c: #C7C7C7) {
-  content: " ";
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  height: 1px;
-  border-top: 1px solid @c;
-  color: @c;
-  transform-origin: 0 0;
-  transform: scaleY(0.5);
-}
-
-.setBottomLine(@c: #C7C7C7) {
-  content: " ";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 1px;
-  border-bottom: 1px solid @c;
-  color: @c;
-  transform-origin: 0 100%;
-  transform: scaleY(0.5);
-}
-
-.setLeftLine(@c: #C7C7C7) {
-  content: " ";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 1px;
-  bottom: 0;
-  border-left: 1px solid @c;
-  color: @c;
-  transform-origin: 0 0;
-  transform: scaleX(0.5);
-}
-
-.setRightLine(@c: #C7C7C7) {
-  content: " ";
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 1px;
-  bottom: 0;
-  border-right: 1px solid @c;
-  color: @c;
-  transform-origin: 100% 0;
-  transform: scaleX(0.5);
-}
-
-.setTapColor(@c:rgba(0,0,0,0)) {
-  -webkit-tap-highlight-color: @c;
-}
-
 .floatLeft {
   float: left;
 }
@@ -125,6 +71,7 @@ img {
   height: 60px;
   padding: 10px;
   border-top: #D9D9D9 1px solid;
+  background-color: #FFFFFF;
 }
 
 // 没有上边框
@@ -150,10 +97,6 @@ img {
   line-height: 40px;
 }
 
-.setColWidth(@width) {
-  width: @width * 10%;
-}
-
 .col-2 {
   .setColWidth(2);
 }
@@ -174,20 +117,15 @@ img {
   .setColWidth(10);
 }
 
-.setFloat(@float) {
-  float: @float;
-}
-
 .textCenter {
-  text-align: center;
-}
-
-.container {
-  padding-left: 10px;
-  padding-right: 10px;
+  .setTextAlign(center);
 }
 
 .headerPic {
   max-width: 40px;
   max-height: 40px;
+}
+
+.padding10 {
+  .setPadding(10px);
 }

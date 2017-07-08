@@ -4,7 +4,7 @@
 import App from '../App'
 import index from '../components/page/index'
 import content from '../components/page/content'
-import footer from '../components/footer'
+import footer from '../components/comm/footer'
 import home from '../components/page/home'
 
 import find from '../components/page/find'

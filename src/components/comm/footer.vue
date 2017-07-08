@@ -54,7 +54,7 @@
   }
 </script>
 <style lang="less" rel="stylesheet/less">
-  @import "../assets/style/weui-tabbar.less";
+  @import "../../assets/style/weui-tabbar.less";
   .wechat {
     background: url(@menuPic) -15px -8px no-repeat scroll transparent
   }

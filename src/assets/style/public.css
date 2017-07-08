@@ -123,6 +123,7 @@ img {
   height: 60px;
   padding: 10px;
   border-top: #D9D9D9 1px solid;
+  background-color: #FFFFFF;
 }
 .row[borderTopWidth='0'] {
   border-top: 0;
@@ -159,11 +160,10 @@ img {
 .textCenter {
   text-align: center;
 }
-.container {
-  padding-left: 10px;
-  padding-right: 10px;
-}
 .headerPic {
   max-width: 40px;
   max-height: 40px;
+}
+.padding10 {
+  padding: 0 10px;
 }
