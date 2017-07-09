@@ -13,6 +13,7 @@ import me from '../components/page/me'
 import wechat from '../components/page/wechat'
 import login from  '../components/page/login'
 import reg from '../components/page/reg'
+import wellcome from '../components/page/wellcome'
 
 export default [{
   path: '/',
@@ -69,6 +70,11 @@ export default [{
       path: '/reg',
       name: 'reg',
       component: reg
+    },
+    {
+      path: '/wellcome',
+      name: 'wellcome',
+      component: wellcome
     }
   ]
 }]
