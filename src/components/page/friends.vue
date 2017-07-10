@@ -292,8 +292,8 @@
         }
       },
       touchLetterStart: function () {
-        document.getElementsByClassName("toast")[0].style.left = 'calc(50% - 25px)'
-        document.getElementsByClassName("toast")[0].style.top = 'calc(50% - 25px)'
+        document.getElementsByClassName("toast")[0].style.left = 'calc(50% - 0.8333333333333334rem)'
+        document.getElementsByClassName("toast")[0].style.top = 'calc(50% - 0.8333333333333334rem)'
         const e = window.event;
         const tmp = this.letterLst.indexOf(e.target.innerText) != -1 ? e.target.innerText : "";
         this.curLetter = tmp ? tmp : this.curLetter;
@@ -317,8 +317,8 @@
 
   .category {
     background-color: #EBEBEB;
-    height: 25px;
-    line-height: 25px;
+    height: 0.8333333333333334rem;
+    line-height: 0.8333333333333334rem;
     font-weight: 500;
   }
 
@@ -329,27 +329,26 @@
 
   .letter {
     position: fixed;
-    right: 5px;
-    top: 3rem;
-    width: 20px;
-    font-size: 0.8rem;
-    font-weight: 800;
+    right: 0.16666666666666666rem;
+    top: 1.5rem;
+    width: 0.6666666666666666rem;
+    font-size: 0.3rem;
     height: 100%;
     .setTextAlign(center)
   }
 
   .letterItem {
-    margin-top: 2px;
+    margin-top: 0.06666666666666667rem;
   }
 
   .toast {
     position: fixed;
-    height: 50px;
-    width: 50px;
-    line-height: 50px;
+    height: 1.6666666666666667rem;
+    width: 1.6666666666666667rem;
+    line-height: 1.6666666666666667rem;
     background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
-    font-size: 26px;
+    font-size: 0.8666666666666667rem;
     .setTextAlign(center)
   }
 </style>

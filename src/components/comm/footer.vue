@@ -43,6 +43,7 @@
       },
     methods: {
       choseMenu(menu) {
+        window.scrollTo(0, 0);
         this.curMenu = menu;
         this.$router.push('/home/' + menu);
       }
@@ -53,7 +54,7 @@
     }
   }
 </script>
-<style lang="less" rel="stylesheet/less">
+<style lang="less" rel="stylesheet/less" scoped>
   @import "../../assets/style/weui-tabbar.less";
   .wechat {
     background: url(@menuPic) -15px -8px no-repeat scroll transparent

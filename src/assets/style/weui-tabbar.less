@@ -2,73 +2,73 @@
 @import "./public.less";
 
 .weui-tabbar {
-    display: flex;
-    position: fixed !important;
-    z-index: 500;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 60px;
-    background-color: #FCFCFC;
-    &:before {
-        .setTopLine(#C0BFC4);
-    }
+  display: flex;
+  position: fixed !important;
+  z-index: 500;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #FCFCFC;
+  &:before {
+    .setTopLine(#C0BFC4);
+  }
 }
 
 .weui-tabbar__item {
-    display: block;
-    flex: 1;
-    padding: 5px 0 0;
-    font-size: 0;
-    color: @weuiTextColorGray;
-    text-align: center;
-    .setTapColor();
+  display: block;
+  flex: 1;
+  padding: 0.2rem 0 0;
+  font-size: 0;
+  color: @weuiTextColorGray;
+  text-align: center;
+  .setTapColor();
 
-    &.weui-bar__item_on {
-        .weui-tabbar__icon,
-        .weui-tabbar__icon > i,
-        .weui-tabbar__label {
-            color: #46C01B;
-        }
+  &.weui-bar__item_on {
+    .weui-tabbar__icon,
+    .weui-tabbar__icon > i,
+    .weui-tabbar__label {
+      color: #46C01B;
     }
+  }
 }
 
 .weui-tabbar__icon {
-    display: inline-block;
-    width: 30px;
-    height: 27px;
+  display: inline-block;
+  width: 30px;
+  height: 27px;
 
-    i&,
-    > i {
-        font-size: 24px;
-        color: @weuiTextColorGray;
-    }
+  i&,
+  > i {
+    font-size: 1.5rem;
+    color: @weuiTextColorGray;
+  }
 
-    img {
-        width: 100%;
-        height: 100%;
-    }
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .weui-tabbar__label {
-    text-align: center;
-    color: @weuiTextColorGray;
-    line-height: 1.8;
-    display: block;
-    font-weight: 500;
-    font-size: 15px;
+  text-align: center;
+  color: @weuiTextColorGray;
+  line-height: 1.8;
+  display: block;
+  font-weight: 500;
+  font-size: 15px;
 }
 
 .weui-badge {
   display: inline-block;
   padding: .15em .4em;
-  min-width: 8px;
+  min-width: 0.5rem;
   border-radius: 18px;
   background-color: #F43530;
   color: #FFFFFF;
   line-height: 1.2;
   text-align: center;
-  font-size: 12px;
+  font-size: 0.75rem;
   vertical-align: middle;
 }
 .weui-badge_dot {

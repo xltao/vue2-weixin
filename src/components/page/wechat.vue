@@ -19,68 +19,68 @@
 
 <script>
   export default {
-      data() {
-          return {
-            chatLst: [{
-              headerPic: '/static/header/1.jpg',
-              friendName: '张益达',
-              content: "你的益达",
-              chatTime: '09:24'
-            },{
-              headerPic: '/static/header/2.jpg',
-              friendName: '张大炮',
-              content: "你的大炮",
-              chatTime: '昨天'
-            },{
-              headerPic: '/static/header/3.jpg',
-              friendName: '斯奈克',
-              content: "你的斯奈克",
-              chatTime: '前天'
-            },{
-              headerPic: '/static/header/1.jpg',
-              friendName: '张益达',
-              content: "你的益达",
-              chatTime: '09:24'
-            },{
-              headerPic: '/static/header/2.jpg',
-              friendName: '张大炮',
-              content: "你的大炮",
-              chatTime: '昨天'
-            },{
-              headerPic: '/static/header/3.jpg',
-              friendName: '斯奈克',
-              content: "你的斯奈克",
-              chatTime: '前天'
-            },{
-              headerPic: '/static/header/1.jpg',
-              friendName: '张益达',
-              content: "你的益达",
-              chatTime: '09:24'
-            },{
-              headerPic: '/static/header/2.jpg',
-              friendName: '张大炮',
-              content: "你的大炮",
-              chatTime: '昨天'
-            },{
-              headerPic: '/static/header/3.jpg',
-              friendName: '斯奈克',
-              content: "你的斯奈克",
-              chatTime: '前天'
-            }]
-          }
+    data() {
+      return {
+        chatLst: [{
+          headerPic: '/static/header/1.jpg',
+          friendName: '张益达',
+          content: "你的益达",
+          chatTime: '09:24'
+        },{
+          headerPic: '/static/header/2.jpg',
+          friendName: '张大炮',
+          content: "你的大炮",
+          chatTime: '昨天'
+        },{
+          headerPic: '/static/header/3.jpg',
+          friendName: '斯奈克',
+          content: "你的斯奈克",
+          chatTime: '前天'
+        },{
+          headerPic: '/static/header/1.jpg',
+          friendName: '张益达',
+          content: "你的益达",
+          chatTime: '09:24'
+        },{
+          headerPic: '/static/header/2.jpg',
+          friendName: '张大炮',
+          content: "你的大炮",
+          chatTime: '昨天'
+        },{
+          headerPic: '/static/header/3.jpg',
+          friendName: '斯奈克',
+          content: "你的斯奈克",
+          chatTime: '前天'
+        },{
+          headerPic: '/static/header/1.jpg',
+          friendName: '张益达',
+          content: "你的益达",
+          chatTime: '09:24'
+        },{
+          headerPic: '/static/header/2.jpg',
+          friendName: '张大炮',
+          content: "你的大炮",
+          chatTime: '昨天'
+        },{
+          headerPic: '/static/header/3.jpg',
+          friendName: '斯奈克',
+          content: "你的斯奈克",
+          chatTime: '前天'
+        }]
       }
+    }
   }
 </script>
 <style lang="less" rel="stylesheet/less">
   .col_header {
     height: 100%;
     width: 100%;
-    max-width: 40px;
-    max-height: 40px;
+    max-width: 1.3333333333333333rem;
+    max-height: 1.3333333333333333rem;
   }
 
   .chat_info {
-    padding-left: 5px;
+    padding-left: 0.16666666666666666rem;
   }
 
   .info_name {
@@ -90,13 +90,13 @@
   }
 
   .info_content {
-    font-size: 6px;
+    font-size: 0.2rem;
     color: #979797;
-    margin-top: 10px;
+    margin-top: 0.3333333333333333rem;
   }
 
   .chat_time {
-    font-size: 6px;
+    font-size: 0.2rem;
     color: #979797;
   }
 </style>
