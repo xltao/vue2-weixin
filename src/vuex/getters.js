@@ -1,6 +1,8 @@
 /**
- * Created by a1 on 17/7/8.
+ * Created by zyzhang on 17/7/8.
  */
-const getters = {}
+const getters = {
+//  name: state => state.user.name
+}
 
 export default getters

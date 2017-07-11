@@ -3,7 +3,7 @@
     <template v-for="chat in chatLst">
       <div class="row">
         <div class="col col-2">
-          <img class="headerPic" :src="chat.headerPic" />
+          <img class="headerPic" :src="chat.headerPic"/>
         </div>
         <div class="col col-6 chat_info">
           <div class="info_name">{{chat.friendName}}</div>
@@ -18,56 +18,22 @@
 </template>
 
 <script>
+
+  import {getList} from 'api/chatrecord';
+
   export default {
     data() {
       return {
-        chatLst: [{
-          headerPic: '/static/header/1.jpg',
-          friendName: '张益达',
-          content: "你的益达",
-          chatTime: '09:24'
-        },{
-          headerPic: '/static/header/2.jpg',
-          friendName: '张大炮',
-          content: "你的大炮",
-          chatTime: '昨天'
-        },{
-          headerPic: '/static/header/3.jpg',
-          friendName: '斯奈克',
-          content: "你的斯奈克",
-          chatTime: '前天'
-        },{
-          headerPic: '/static/header/1.jpg',
-          friendName: '张益达',
-          content: "你的益达",
-          chatTime: '09:24'
-        },{
-          headerPic: '/static/header/2.jpg',
-          friendName: '张大炮',
-          content: "你的大炮",
-          chatTime: '昨天'
-        },{
-          headerPic: '/static/header/3.jpg',
-          friendName: '斯奈克',
-          content: "你的斯奈克",
-          chatTime: '前天'
-        },{
-          headerPic: '/static/header/1.jpg',
-          friendName: '张益达',
-          content: "你的益达",
-          chatTime: '09:24'
-        },{
-          headerPic: '/static/header/2.jpg',
-          friendName: '张大炮',
-          content: "你的大炮",
-          chatTime: '昨天'
-        },{
-          headerPic: '/static/header/3.jpg',
-          friendName: '斯奈克',
-          content: "你的斯奈克",
-          chatTime: '前天'
-        }]
+        chatLst: ''
       }
+    },
+    created() {
+      /**
+       * 获取聊天记录
+       */
+      getList().then(response => {
+        this.chatLst = response.data;
+      })
     }
   }
 </script>
