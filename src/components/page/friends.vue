@@ -329,16 +329,40 @@
 
   .letter {
     position: fixed;
-    right: 0.16666666666666666rem;
-    top: 1.5rem;
+    right: 0.01666666666666666rem;
     width: 0.6666666666666666rem;
-    font-size: 0.3rem;
-    height: 100%;
-    .setTextAlign(center)
+    top: 50%; /*偏移*/
+    transform: translateY(-50%);
+    .setTextAlign(center);
+    font-size: 8px;
+  }
+
+  @media screen and (min-width: 320px) {
+    .letter {
+      font-size: 8px;
+    }
+  }
+
+  @media screen and (min-width: 360px) {
+    .letter {
+      font-size: 12px;
+    }
+  }
+
+  @media screen and (min-width: 640px) {
+    .letter {
+      font-size: 20px;
+    }
+  }
+
+  @media screen and (min-height: 600px) {
+    .letter {
+      font-size: 12px;
+    }
   }
 
   .letterItem {
-    margin-top: 0.06666666666666667rem;
+    margin-top: 0.01666666666666667rem;
   }
 
   .toast {
