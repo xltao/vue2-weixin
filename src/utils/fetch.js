@@ -11,19 +11,19 @@ const service = axios.create({
 
 // request拦截器
 service.interceptors.request.use(config => {
-  console.log('request拦截器:', config);
+  // console.log('request拦截器:', config);
   return config;
 }, error => {
-  console.log(error); // for debug
+  // console.log(error); // for debug
   Promise.reject(error);
 });
 
 // respone拦截器
 service.interceptors.response.use(resopnse => {
-  console.log('respone拦截器:', resopnse); // for debug
+  // console.log('respone拦截器:', resopnse); // for debug
   return resopnse;
 }, error => {
-  console.log(error); // for debug
+  // console.log(error); // for debug
   return Promise.reject(error)
 })
 

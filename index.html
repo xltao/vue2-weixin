@@ -12,5 +12,9 @@
   <router-view></router-view>
 </div>
 <!-- built files will be auto injected -->
+<script src="static/lib/socket.io.js"></script>
+<script>
+  window.mySocket = io.connect("http://localhost:3000");
+</script>
 </body>
 </html>
