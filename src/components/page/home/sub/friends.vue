@@ -71,7 +71,7 @@
 </template>
 
 <script>
-  import Comm from "../../assets/javascript/Comm"
+  import Comm from "../../../../assets/javascript/Comm"
   export default {
     data() {
       return {
@@ -313,7 +313,7 @@
   }
 </script>
 <style lang="less" rel="stylesheet/less">
-  @import "../../assets/style/func";
+  @import "../../../../assets/style/func";
 
   .category {
     background-color: #EBEBEB;

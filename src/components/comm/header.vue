@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="header">
+    <section class="header" v-if="type == 0">
       <div class="header-title">微信</div>
       <!--<div class="header-operate" @click="showOrHide()">+</div>-->
       <a class="header-operate" @click="showOrHide()">+</a>
@@ -11,7 +11,7 @@
           </div>
           <span class="operateText">发起群聊</span>
         </a>
-        <a class="operateItem">
+        <a class="operateItem" @click="goAddress('/addFriend')">
           <div class="operateIcon">
             <img src="/static/home/addFriend.png"/>
           </div>
@@ -25,6 +25,14 @@
         </a>
       </div>
     </section>
+
+    <section class="header" v-if="type == 1">
+      <template v-if="showBack">
+        <img src="/static/header/back.png" class="back" @click="$router.go(-1)"/>
+        <img src="/static/header/delimiter.png" class="delimiter-vertical">
+      </template>
+      <div class="header-description">{{title}}</div>
+    </section>
   </div>
   </div>
 </template>
@@ -32,16 +40,20 @@
   export default {
     data() {
       return {
-        showOperate: true
+        showOperate: false
       }
     },
     methods: {
       showOrHide: function () {
         this.showOperate = !this.showOperate;
+      },
+      goAddress: function (address) {
+        this.$router.push(address);
       }
     },
     mounted() {
-    }
+    },
+    props: ["type", "title", "showBack"]
   }
 </script>
 <style lang="less" rel="stylesheet/less" scoped>
@@ -92,7 +104,7 @@
   }
 
   .operateIcon > img {
-    .setHeaderSize(32px);
+    .setHeaderSize(28px);
     vertical-align: middle;
   }
 
@@ -108,5 +120,27 @@
 
   a {
     text-decoration: none !important;
+  }
+
+  .header > img {
+    vertical-align: middle;
+  }
+
+  .back {
+    .setColWidth(1);
+    .setHeaderSize(24px);
+    margin-left: 5px;
+  }
+
+  .delimiter-vertical {
+    .setHeaderSize(36px);
+    .setColWidth(0.5);
+  }
+
+  .header-description {
+    .setColWidth(5);
+    color: #fff;
+    font-size: 16px;
+    margin-left: 5px;
   }
 </style>

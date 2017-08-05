@@ -49,7 +49,6 @@
       }
     },
     mounted() {
-      console.log(this.$route.name);
       this.curMenu = this.$route.name;
     }
   }

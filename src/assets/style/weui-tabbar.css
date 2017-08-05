@@ -167,6 +167,9 @@ img {
 .padding10 {
   padding: 0 0.33333333rem;
 }
+a:hover {
+  text-decoration: none;
+}
 .weui-tabbar {
   display: flex;
   position: fixed !important;

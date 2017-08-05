@@ -2,20 +2,27 @@
   <div>
     <div class="row">
       <div class="col col-2">
-        <img class="headerPic" src="/static/header/1.jpg"/>
+        <img class="headerPic" :src="userInfo.headerPic"/>
       </div>
       <div class="col col-8 col-middle">
-        新的朋友
+        {{userInfo.userName}}
       </div>
     </div>
   </div>
 </template>
 
 <script>
+  import {mapMutations} from 'vuex'
+  import {mapGetters} from 'vuex'
   export default {
     data() {
       return {}
     },
-    methods: {}
+    methods: {},
+    computed: {
+      ...mapGetters([
+        "userInfo"
+      ])
+    }
   }
 </script>

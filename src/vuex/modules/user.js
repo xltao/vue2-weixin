@@ -3,12 +3,16 @@
  */
 const user = {
   state: {
-    name: 'zyzhang'
+    name: 'zyzhang',
+    userInfo: null
   },
 
   mutations: {
     SET_NAME: (state, name) => {
       state.name = name
+    },
+    SET_USER: (state, userInfo) => {
+      state.userInfo = userInfo;
     }
   },
 
